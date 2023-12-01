@@ -9,7 +9,7 @@ COPY --chown=node:node package*.json ./
 # COPY --chown=node:node . .
 USER node
 
-RUN npm install --registry https://repo1.uhc.com/artifactory/api/npm/npm-virtual/
+RUN npm install 
 
 # If you are building your code for production
 #RUN npm ci
