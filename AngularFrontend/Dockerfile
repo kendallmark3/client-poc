@@ -2,7 +2,7 @@
 FROM node:18.16.0-alpine3.17 as build-stage
 WORKDIR ./app
 COPY ./package*.json /app/
-RUN npm install --registry https://repo1.uhc.com/artifactory/api/npm/npm-virtual/
+RUN npm install 
 COPY ./ /app/
 
 RUN npm run build -- --output-path=./dist/out --output-hashing=all
