@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {AgChartsAngularModule} from 'ag-charts-angular';
 import  {BarchartDashboardModule} from './barchart-dashboard/barchart-dashboard.module'
+import  {HomeDashboardModule} from './home-dashboard/home-dashboard.module'
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import  {BarchartDashboardModule} from './barchart-dashboard/barchart-dashboard.
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    BarchartDashboardModule 
+    BarchartDashboardModule,
+    HomeDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
