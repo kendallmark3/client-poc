@@ -13,14 +13,15 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     BarchartDashboardComponent,
-    GraficoBarrasComponent
+    GraficoBarrasComponent,
   ],
   imports: [
     CommonModule,
     MatSlideToggleModule,
     MatToolbarModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+
 
   ]
 })

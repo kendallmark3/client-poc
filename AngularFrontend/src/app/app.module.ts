@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import {ChartComponent} from './chart/chart/chart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {AgChartsAngularModule} from 'ag-charts-angular';
 import  {BarchartDashboardModule} from './barchart-dashboard/barchart-dashboard.module'
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import { RouterModule } from '@angular/router';
     HomeDashboardModule,
     MatToolbarModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

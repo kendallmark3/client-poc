@@ -1,5 +1,4 @@
-<main>
-  <div class="top-menu">
+<div class="top-menu">
     <mat-toolbar color="primary">
       <span>Wipro Management</span>
        <a mat-button routerLink="">Home</a>
@@ -7,12 +6,6 @@
        <a mat-button routerLink="/barchart">Bar Chart</a>
        <a mat-button routerLink="/chart">Chart</a>
      </mat-toolbar>
-
-    <img class="logo"
-         src="../assets/Wipro_Primary Logo_Color_RGB.svg">
-
-  </div>
-
-</main>
-
-
+<div class="chart-container">
+    <canvas  id="MyChart" >{{ chart }}</canvas>
+</div>
