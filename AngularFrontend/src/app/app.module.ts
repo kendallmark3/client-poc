@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {AgChartsAngularModule} from 'ag-charts-angular';
+import  {BarchartDashboardModule} from './barchart-dashboard/barchart-dashboard.module'
 
 
 @NgModule({
@@ -17,8 +17,8 @@ import {AgChartsAngularModule} from 'ag-charts-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSlideToggleModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BarchartDashboardModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
