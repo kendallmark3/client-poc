@@ -99,3 +99,6 @@ If you find any bug or just want to give your feedback (remember the ⭐ ^^), **
 ## Version control 📝
 
 - [v1.0] Initial Commit
+
+# Creating Feature Modules and components:
+https://angular.io/guide/feature-modules
