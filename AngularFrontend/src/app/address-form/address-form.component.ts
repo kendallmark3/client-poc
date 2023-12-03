@@ -1,5 +1,6 @@
 import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 
+
 import {
   AbstractControl,
   ControlValueAccessor,
@@ -9,7 +10,6 @@ import {
   Validator,
   Validators
 } from '@angular/forms';
-import {noop, Subscription} from 'rxjs';
 
 @Component({
   selector: 'address-form',
@@ -30,7 +30,6 @@ export class AddressFormComponent implements ControlValueAccessor, OnDestroy {
 
     onTouched = () => {};
 
-    onChangeSub!: Subscription;
 
     form: FormGroup = this.fb.group({
         addressLine1: [null, [Validators.required]],
@@ -44,11 +43,11 @@ export class AddressFormComponent implements ControlValueAccessor, OnDestroy {
     }
 
     registerOnChange(onChange: any) {
-        this.onChangeSub = this.form.valueChanges.subscribe(onChange);
+        
     }
 
     ngOnDestroy() {
-        this.onChangeSub.unsubscribe();
+  
     }
 
 

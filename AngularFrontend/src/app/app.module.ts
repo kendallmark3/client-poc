@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import { HeaderComponent } from './header/header.component';
 import {ChartComponent} from './chart/chart/chart.component';
 import {AddressFormComponent } from './address-form/address-form.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +17,7 @@ import { RouterModule } from '@angular/router';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     AboutComponent,
     ChartComponent,
-    AddressFormComponent 
+    AddressFormComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RouterModule,
     MatFormFieldModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatInputModule 
 
   ],
   providers: [],
