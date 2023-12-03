@@ -5,6 +5,7 @@ import { BarchartDashboardComponent } from './barchart-dashboard/barchart-dashbo
 import {HomeDashboardComponent} from './home-dashboard/home-dashboard/home-dashboard.component';
 import {ChartComponent} from './chart/chart/chart.component';
 import { AddressFormComponent } from './address-form/address-form.component';
+import {PieChartComponent} from './piechart/piechart.component'
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'barchart', component: BarchartDashboardComponent },
   { path: 'chart', component: ChartComponent },
   { path: 'form', component: AddressFormComponent },
+  { path: 'piechart', component: PieChartComponent },
   
 
 

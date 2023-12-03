@@ -1,0 +1,14 @@
+
+<app-header></app-header>   
+<div class="form-container" style="text-align:center;">
+<form (ngSubmit)="onSubmit()">
+<div *ngFor="let value of values; let i = index">
+<label for="value{{ i }}">Value {{ i + 1 }}:</label>
+<input type="number" id="value{{ i }}" [(ngModel)]="values[i]" [ngModelOptions]="{standalone:true}">
+</div>
+<button type="submit">Update Chart</button>
+</form>
+</div>
+<div class="chart-container" style="position:absolute; top:60px; left:10px; width:500px; height:500px;">
+    <canvas id="pieChart"></canvas>
+</div>
