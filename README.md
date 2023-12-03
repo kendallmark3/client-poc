@@ -1,4 +1,6 @@
-# 🐳 Client POC: Docker + Angular 15 Boilerplate + Nginx + NodeJS (Sequelize) + PostgreSQL 14 🐳
+# 🐳 Client POC: Docker + Angular 15 Boilerplate + Nginx + NodeJS (Sequelize) + PostgreSQL 14 - Ready to Deploy to Azure🐳
+
+# 🐳 Docker Compose will create 3 images ready to deploy- my preference would be Kubernetes so would have to convert compose to helm chart🐳
 
 ![repo_logo](https://user-images.githubusercontent.com/57062736/175810561-b5128e39-a71e-49cc-984d-7a9f5e3841d4.png)
 
