@@ -67,5 +67,3 @@ In this component, the Mapbox map is rendered in the `mapContainer` div using a 
 On input change, the `updateMap()` method is called, which updates the map by setting the new center coordinates and adds a new marker at the specified latitude and longitude.
 
 Please note that this is a basic example and you might need to add additional error handling, styling, or customization based on your specific requirements.
-
-pk.eyJ1Ijoia2VuZGFsbG1hcmszIiwiYSI6ImNsMTZxMzNpcjE1bjQzY3AzeWhnN3Z0amgifQ.N4eXOSxCllFd1E9qDFPtlw
