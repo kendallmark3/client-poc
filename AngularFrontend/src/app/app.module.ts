@@ -19,6 +19,7 @@ import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { PieChartComponent } from './piechart/piechart.component';
+import { MapboxComponent } from './mapbox/mapbox.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { PieChartComponent } from './piechart/piechart.component';
     ChartComponent,
     AddressFormComponent,
     HeaderComponent,
-    PieChartComponent
+    PieChartComponent,
+    MapboxComponent
   ],
   imports: [
     BrowserModule,
