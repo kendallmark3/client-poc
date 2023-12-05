@@ -1,19 +1,11 @@
 
-<div class="view">
-    <div class="top-menu">
-        <mat-toolbar color="primary">
-          <span>Wipro Management</span>
-           <a mat-button routerLink="">Home</a>
-           <a mat-button routerLink="/about">About</a>
-           <a mat-button routerLink="/barchart">Bar Chart</a>
-           <a mat-button routerLink="/chart">Chart</a>
-           <a mat-button routerLink="/form">Form</a>
-         </mat-toolbar>
 
+<app-header></app-header>
     <div class="container" style="text-align:center;">
         <header>
             <h3><span class="glyphicon glyphicon-info-sign"></span>Welcome to Wipro Projections</h3>
         </header>
+        <p style="white-space: pre;">{{ message }}</p>
         <br />
         <div class="container">
             <div class="row">
@@ -30,7 +22,8 @@
                 <div class="col-md-2">GitHub:</div>
                 <div class="col-md-10"><a href="https://www.wipro.com/digital/" target="_blank">Wipro  Digital</a></div>
             </div>
+     
         </div>
     </div>
-</div>
+
 

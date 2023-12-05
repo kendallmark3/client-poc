@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { PieChartComponent } from './piechart/piechart.component';
 import { MapboxComponent } from './mapbox/mapbox.component';
+import {BroadcastService } from './services/broadcastservice'
 
 
 @NgModule({
@@ -47,7 +48,7 @@ import { MapboxComponent } from './mapbox/mapbox.component';
     MatInputModule 
 
   ],
-  providers: [],
+  providers: [BroadcastService],
   bootstrap: [AppComponent]
 })
 

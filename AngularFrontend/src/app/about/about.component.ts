@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BroadcastService } from '../services/broadcastservice';
 
 
 @Component({
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+constructor(private broadcastService: BroadcastService) {}
+message: string;
+
+ngOnInit(): void {
+  this.broadcastService.message$.subscribe((message: string) => {
+  this.message = message;
+  });
+  this.broadcastService.broadcastMessage("Hello Vamshi from the Brodcast Servive!");
 }
-console.log("In About");
+}
