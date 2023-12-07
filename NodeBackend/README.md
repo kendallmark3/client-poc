@@ -1,5 +1,7 @@
 # dockerAngularNginxNodePostgreSQL
 
+# Test PR Rule
+
 if you create the database more than once with docker compose up,
 anf you want to create the database again run:
     docker compose down --volumes
