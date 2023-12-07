@@ -21,7 +21,8 @@ import { MatInputModule } from '@angular/material/input';
 import { PieChartComponent } from './piechart/piechart.component';
 import { MapboxComponent } from './mapbox/mapbox.component';
 import {BroadcastService } from './services/broadcastservice';
-import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component'
+import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
+import { ProductivityChartComponent } from './productivity-chart/productivity-chart.component'
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.componen
     HeaderComponent,
     PieChartComponent,
     MapboxComponent,
-    BmiCalculatorComponent
+    BmiCalculatorComponent,
+    ProductivityChartComponent
   ],
   imports: [
     BrowserModule,
@@ -47,8 +49,7 @@ import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.componen
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule 
-
+    MatInputModule
   ],
   providers: [BroadcastService],
   bootstrap: [AppComponent]

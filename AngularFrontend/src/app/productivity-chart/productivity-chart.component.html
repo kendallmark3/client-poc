@@ -1,0 +1,11 @@
+<form [formGroup]="productivityForm" (ngSubmit)="onSubmit()">
+    <label for="totalInput">Total Input:</label>
+    <input type="number" id="totalInput" formControlName="totalInput" placeholder="Enter total input" />
+    
+    <label for="totalOutput">Total Output:</label>
+    <input type="number" id="totalOutput" formControlName="totalOutput" placeholder="Enter total output" />
+    
+    <button type="submit">Calculate Productivity</button>
+  </form>
+  
+  <canvas id="chartCanvas"></canvas>
