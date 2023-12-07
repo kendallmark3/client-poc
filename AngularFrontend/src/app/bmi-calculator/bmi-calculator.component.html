@@ -1,0 +1,19 @@
+<div>
+    <h2>BMI Calculator</h2>
+    <form (ngSubmit)="calculateBMI()">
+      <div>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" [(ngModel)]="weight" name="weight" required>
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" [(ngModel)]="age" name="age" required>
+      </div>
+      <button type="submit">Calculate BMI</button>
+    </form>
+    <div *ngIf="bmi">
+      <p>Your BMI is: {{ bmi }}</p>
+      <p *ngIf="bmi > 20">You are overweight. Please seek professional advice.</p>
+      <p *ngIf="bmi <= 20">Your weight is within a healthy range.</p>
+    </div>
+  </div>

@@ -20,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { PieChartComponent } from './piechart/piechart.component';
 import { MapboxComponent } from './mapbox/mapbox.component';
-import {BroadcastService } from './services/broadcastservice'
+import {BroadcastService } from './services/broadcastservice';
+import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component'
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import {BroadcastService } from './services/broadcastservice'
     AddressFormComponent,
     HeaderComponent,
     PieChartComponent,
-    MapboxComponent
+    MapboxComponent,
+    BmiCalculatorComponent
   ],
   imports: [
     BrowserModule,
