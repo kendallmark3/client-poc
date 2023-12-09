@@ -1,4 +1,3 @@
-
 <div class="view">
     <div class="top-menu">
         <mat-toolbar color="primary">
@@ -13,3 +12,16 @@
            <a mat-button routerLink="/dice">Roll Dice</a>
          </mat-toolbar>
 </div>
+<div class="container">
+    <h2>Dice Roller</h2>
+    <div [formGroup]="form">
+    <label for="numRolls">Number of Rolls:</label>
+    <input type="number" id="numRolls" formControlName="numRolls" placeholder="Enter total output">
+    <button (click)="rollDice(numRolls)">Roll!</button>
+    </div>
+    <div class="dice-container"   *ngIf="rolls.length > 0">
+    <div class="dice" *ngFor="let roll of rolls">{{ roll }}</div>
+    </div>
+    </div>
+
+  

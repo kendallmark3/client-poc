@@ -9,6 +9,7 @@ import {PieChartComponent} from './piechart/piechart.component'
 import { MapboxComponent } from './mapbox/mapbox.component';
 import {BmiCalculatorComponent} from './bmi-calculator/bmi-calculator.component'
 import {ProductivityChartComponent} from './productivity-chart/productivity-chart.component'
+import {DiceRollerComponent } from './dice-roller/dice-roller.component'
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'piechart', component: PieChartComponent },
   { path: 'map', component: MapboxComponent },
   { path: 'bmi', component: BmiCalculatorComponent},
-  { path: 'product', component: ProductivityChartComponent}
+  { path: 'product', component: ProductivityChartComponent},
+  { path: 'dice', component: DiceRollerComponent}
   
 
 

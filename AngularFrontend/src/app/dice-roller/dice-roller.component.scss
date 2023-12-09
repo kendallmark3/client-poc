@@ -1,0 +1,38 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+    }
+    
+    .dice-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }
+    
+    .dice {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: rollDice 2s infinite;
+    }
+    
+    @keyframes rollDice {
+    0%, 100% {
+    transform: rotate(0deg);
+    }
+    25% {
+    transform: rotate(180deg);
+    }
+    50% {
+    transform: rotate(90deg);
+    }
+    75% {
+    transform: rotate(270deg);
+    }
+    }

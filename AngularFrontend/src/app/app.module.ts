@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
+// import { BrowserModule } from '@angular/platform-browser';
+import {NgIf} from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -22,7 +22,10 @@ import { PieChartComponent } from './piechart/piechart.component';
 import { MapboxComponent } from './mapbox/mapbox.component';
 import {BroadcastService } from './services/broadcastservice';
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
-import { ProductivityChartComponent } from './productivity-chart/productivity-chart.component'
+import { ProductivityChartComponent } from './productivity-chart/productivity-chart.component';
+import { DiceRollerComponent } from './dice-roller/dice-roller.component'
+import { CommonModule } from '@angular/common';  
+
 
 
 @NgModule({
@@ -35,21 +38,26 @@ import { ProductivityChartComponent } from './productivity-chart/productivity-ch
     PieChartComponent,
     MapboxComponent,
     BmiCalculatorComponent,
-    ProductivityChartComponent
+    ProductivityChartComponent,
+    DiceRollerComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
+    // BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     BarchartDashboardModule,
     HomeDashboardModule,
     MatToolbarModule,
-    MatButtonModule,
+    MatButtonModule,  
     RouterModule,
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+    NgIf
+
+
   ],
   providers: [BroadcastService],
   bootstrap: [AppComponent]
