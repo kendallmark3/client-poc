@@ -24,7 +24,9 @@ import {BroadcastService } from './services/broadcastservice';
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
 import { ProductivityChartComponent } from './productivity-chart/productivity-chart.component';
 import { DiceRollerComponent } from './dice-roller/dice-roller.component'
-import { CommonModule } from '@angular/common';  
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import {OpenAIComponentComponent} from './open-aicomponent/open-aicomponent.component';
 
 
 
@@ -39,7 +41,8 @@ import { CommonModule } from '@angular/common';
     MapboxComponent,
     BmiCalculatorComponent,
     ProductivityChartComponent,
-    DiceRollerComponent
+    DiceRollerComponent,
+    OpenAIComponentComponent
   ],
   imports: [
     CommonModule,
@@ -55,8 +58,8 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    NgIf
-
+    NgIf,
+    HttpClientModule
 
   ],
   providers: [BroadcastService],

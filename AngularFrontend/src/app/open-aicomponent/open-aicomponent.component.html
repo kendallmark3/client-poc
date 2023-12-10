@@ -1,0 +1,12 @@
+<form (ngSubmit)="addPrompt()">
+    <label for="promptInput">Prompt:</label>
+    <input type="text" id="promptInput" [(ngModel)]="prompt" name="prompt" required>
+    <button type="submit">Submit</button>
+  </form>
+  
+  <div *ngIf="response">
+    <h3>Response:</h3>
+    <p>{{ response }}</p>
+  </div>
+  
+  <button (click)="regenerativeCall()">Regenerative Call</button>

@@ -1,0 +1,1 @@
+https://api.openai.com/v1/completions?model=text-davinci-002&prompt=Hello&max_tokens=1024&stop=.&api_key=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
