@@ -16,6 +16,6 @@ ngOnInit(): void {
   this.broadcastService.message$.subscribe((message: string) => {
   this.message = message;
   });
-  this.broadcastService.broadcastMessage("Hello Vamshi from the Brodcast Servive!");
+  this.broadcastService.broadcastMessage("Hello Vamshi from the Broadcast Service!");
 }
 }
