@@ -11,6 +11,7 @@ import {BmiCalculatorComponent} from './bmi-calculator/bmi-calculator.component'
 import {ProductivityChartComponent} from './productivity-chart/productivity-chart.component'
 import {DiceRollerComponent } from './dice-roller/dice-roller.component'
 import {OpenAIComponentComponent} from './open-aicomponent/open-aicomponent.component'
+import {ProfilePageComponent} from './profile-page/profile-page.component'
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'bmi', component: BmiCalculatorComponent},
   { path: 'product', component: ProductivityChartComponent},
   { path: 'dice', component: DiceRollerComponent},
-  { path: 'openai', component: OpenAIComponentComponent}
+  { path: 'openai', component: OpenAIComponentComponent},
+  { path: 'profile', component: ProfilePageComponent}
   
 
 

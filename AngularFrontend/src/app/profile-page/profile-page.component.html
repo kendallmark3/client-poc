@@ -1,0 +1,48 @@
+<br/>
+<div class="flex justify-center m-1">Profile Page</div>
+<br/><br/>
+<div class="flex justify-center m-1">
+
+
+<div class="flex justify-center"></div>
+<form (ngSubmit)="onSubmit()">
+
+  <p>
+    <span>Name</span><br/>
+    <input type="text" name="name" [(ngModel)]="testData.name" size="20" /><br/>
+  </p>
+
+  <p>
+    <span>Comments</span><br/>
+    <textarea name="comments" [(ngModel)]="testData.comments"
+      cols="40" rows="4"></textarea><br/>
+  </p>
+
+  <p>
+    <span>Favorite Color</span><br/>
+    <select name="color" [(ngModel)]="testData.color">
+      <option *ngFor="let c of colors" value="{{c}}">{{c}}</option>
+    </select>
+  </p>
+
+  <p>
+    <span>Favorite Framework</span><br/>
+    <span *ngFor="let s of languages">
+      <input type="radio" name="languages"
+        value="{{s}}" [(ngModel)]="testData.languages" /> {{s}}
+    </span>
+  </p>
+
+  <p>
+    <span>Hobbies</span><br/>
+    <span *ngFor="let h of hobbies; index as i">
+      <input type="checkbox" name="hobbies[{{i}}]"
+        value="{{h}}" [(ngModel)]="testData.hobbies[i]" /> {{h}}
+    </span>
+  </p>
+
+  <button type="submit">Submit</button>
+
+</form>
+</div>
+

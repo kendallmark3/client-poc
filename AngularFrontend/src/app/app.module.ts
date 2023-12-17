@@ -27,6 +27,8 @@ import { DiceRollerComponent } from './dice-roller/dice-roller.component'
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import {OpenAIComponentComponent} from './open-aicomponent/open-aicomponent.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+
 
 
 
@@ -42,7 +44,8 @@ import {OpenAIComponentComponent} from './open-aicomponent/open-aicomponent.comp
     BmiCalculatorComponent,
     ProductivityChartComponent,
     DiceRollerComponent,
-    OpenAIComponentComponent
+    OpenAIComponentComponent,
+    ProfilePageComponent
   ],
   imports: [
     CommonModule,
