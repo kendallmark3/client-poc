@@ -28,6 +28,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import {OpenAIComponentComponent} from './open-aicomponent/open-aicomponent.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { UserModule } from './user/user.module';
+import { NavComponent } from './nav/nav.component';
 
 
 
@@ -45,7 +47,8 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     ProductivityChartComponent,
     DiceRollerComponent,
     OpenAIComponentComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    NavComponent
   ],
   imports: [
     CommonModule,
@@ -62,7 +65,8 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     ReactiveFormsModule,
     MatInputModule,
     NgIf,
-    HttpClientModule
+    HttpClientModule,
+    UserModule
 
   ],
   providers: [BroadcastService],
