@@ -12,6 +12,7 @@ import {ProductivityChartComponent} from './productivity-chart/productivity-char
 import {DiceRollerComponent } from './dice-roller/dice-roller.component'
 import {OpenAIComponentComponent} from './open-aicomponent/open-aicomponent.component'
 import {ProfilePageComponent} from './profile-page/profile-page.component'
+import {MatixfunComponent} from './matixfun/matixfun.component'
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'product', component: ProductivityChartComponent},
   { path: 'dice', component: DiceRollerComponent},
   { path: 'openai', component: OpenAIComponentComponent},
-  { path: 'profile', component: ProfilePageComponent}
+  { path: 'profile', component: ProfilePageComponent},
+  { path: 'matrix', component: MatixfunComponent}
   
 
 

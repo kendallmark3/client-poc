@@ -30,6 +30,7 @@ import {OpenAIComponentComponent} from './open-aicomponent/open-aicomponent.comp
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { UserModule } from './user/user.module';
 import { NavComponent } from './nav/nav.component';
+import { MatixfunComponent } from './matixfun/matixfun.component';
 
 
 
@@ -48,7 +49,8 @@ import { NavComponent } from './nav/nav.component';
     DiceRollerComponent,
     OpenAIComponentComponent,
     ProfilePageComponent,
-    NavComponent
+    NavComponent,
+    MatixfunComponent
   ],
   imports: [
     CommonModule,
