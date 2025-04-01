@@ -1,4 +1,4 @@
-# 🐳 Docker + Angular 15 Boilerplate + Nginx + NodeJS (Sequelize) + PostgreSQL 14 🐳
+# 🐳 Docker + Angular 15 Boilerplate + Nginx + NodeJS (Sequelize) + PostgreSQL 14 MK 🐳
 
 ![repo_logo](https://user-images.githubusercontent.com/57062736/175810561-b5128e39-a71e-49cc-984d-7a9f5e3841d4.png)
 
